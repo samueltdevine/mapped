@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="navy" id="landing">
+        <div class="margin">
+            <div class="flex-sb">
+                <a href="index.html">
+                    <img src="images/svg/mapped_logoAsset 1.svg" class="mapped-logo" alt="mapped_logo">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="form" class="vh80" style="display: flex; flex-direction: column; align-items: center;">
+
+        <form action="/requests" method="post">
+            <ul class="form-text" style="display: flex; flex-direction: column;">
+                <li><h2>Request a Demo</h2></li>
+                <li>
+                    <label for="first name">First name</label> <br>
+                    <input id="first name" type="text">
+                </li>
+                <li>
+                    <label for="last name">Last name</label> <br>
+                    <input id="last name" type="text">
+                </li>
+                <li>
+                    <label for="email">Email</label> <br>
+                    <input id="email" type="text">
+                </li>
+                <li>
+                    <label for="Company Name">Company Name</label> <br>
+                    <input id="Company Name" type="text">
+                </li>
+                <li>
+                    <label for="msg">Message</label> <br>
+                    <textarea id="msg" name="uset_message"></textarea></textarea>
+                </li>
+                <li style="align-self: flex-end;">
+                <button style="background-color: var(--navy); color: white;">Submit</button>
+                </li>
+            </ul>
+        </form>
+    </section>
+</body>
+</html>

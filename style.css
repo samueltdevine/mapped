@@ -1,0 +1,494 @@
+/* ----------------------------------
+        normalizing styles 
+------------------------------------*/
+.all{
+    width: 100vw;
+    right: 0%;
+}
+
+.auto-h{
+    height: max-content;;
+}
+h1, h2, h3, h4, h5, h6, p, a, li, span, button, label, textarea{
+    color: white;
+    font-family: inter, helvetica, arial, sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+    margin: 0;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0 auto;
+}
+a:link{
+    color: white;
+}
+li > a:visited{
+    color: white;
+}
+a:hover{
+    color:white;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
+:root{
+    --light-blue: #0C92FF;
+    --navy: #031421; 
+    --gray: #F2F3F6;
+    --horiz-base: 5vw;
+    --horiz-half: calc(var(--horiz-base) / 2);
+}
+
+textarea{
+    resize: none;
+    height: 150px;
+}
+/* ----------------------------------
+               global styles
+------------------------------------*/
+h1{
+    font-size: 5vh;
+    font-weight: bold;
+    padding-bottom: var(--horiz-base);
+}
+
+h2{
+    font-size:  3vh;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+h4{
+    margin: auto;
+    margin-left: 0;
+}
+h5{
+    font-weight: bold;
+    color: var(--light-blue);
+    margin-bottom: 12px;
+}
+
+
+button{
+    color: var(--navy);
+    font-weight: bold ;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    width: max-content;
+}
+.icon{
+    width: 5vh;
+    padding: 24px;
+    padding-left: 0;
+}
+
+.grey70{
+    background-image: url(images/svg/25-75.svg);
+    background-size: cover;
+}
+
+.grey70reverse{
+    background-image: url(images/svg/70-30.svg);
+    background-size: cover;
+}
+
+
+/* ----------------------------------
+               utilities
+------------------------------------*/
+.mapped-logo{
+    height: 36px;
+    padding-right: 10px;
+}
+
+.h24{
+    height: 24px;
+}
+
+.margin{
+    margin-left: var(--horiz-base);
+    margin-right: var(--horiz-base);
+}
+
+.navy{
+    background-color: var(--navy);
+}
+
+.gray{
+    background-color: var(--gray);
+}
+
+.flex-sb{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-start-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.vh90{
+    height: 90vh;
+    object-fit: cover;
+}
+.vh80{
+    height: 80vh;
+    object-fit: cover;
+}
+.vh60{
+    height: 60vh;
+    object-fit: cover;
+}
+
+.vh-full{
+    height: 100vh;
+}
+.spacer{
+height: var(--horiz-base);
+}
+.spacer-half{
+    height: var(--horiz-half);
+    }
+
+.img50w{
+    width: 50vw;
+}
+.top-pad{
+    padding-top: var(--horiz-base);
+}
+.bot-pad{
+    padding-bottom: var(--horiz-base);
+}
+
+/* ----------------------------------
+               grids
+------------------------------------*/
+.g40-60{
+    display: flex;
+    height: inherit;
+
+}
+
+.g40-60 > div:nth-child(1){
+ width: 40%;
+}
+
+.g40-60 > div > p{
+    width: 60%;
+   }
+
+.g40-60 > div:nth-child(2){
+ width: 60%;
+}
+
+.g60-40{
+    display: flex;
+
+}
+
+.g60-40 > div:nth-child(1){
+ width: 60%;
+}
+
+.g60-40 > div:nth-child(2){
+ width: 20%;
+}
+
+.grid5col{
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.w1of5{
+    width: 20%;
+    align-items: flex-start;
+}
+
+.w4of5{
+    height: inherit;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ----------------------------------
+               landing
+------------------------------------*/
+.landing-content{
+    min-height: 60vh;
+}
+
+.lean-img{
+    min-height: 80vh;
+    height: 75vh auto;
+    object-fit: cover;
+    background-image: url(images/Ring_flat.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* ----------------------------------
+               benefits
+------------------------------------*/
+.benefit-gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.benefit-container{
+    width: 30%;
+    padding-bottom: var(--horiz-base);
+}
+.benefit-container p{
+    color: var(--navy);
+    font-weight: bold;
+
+}
+.benefit-top{
+    display: flex;
+}
+.benefit-top h4{
+    color: var(--navy);
+    font-weight: bold;
+
+}
+.benefit-bottom{
+    width: 90%;
+}
+.benefit-bottom > p{
+    font-weight: 300;
+
+}
+
+/* ----------------------------------
+            break image
+------------------------------------*/
+.break-image{
+    height: 80vh;
+    background-size: cover;
+    background-position: 0% 0%;
+    background-image: url(images/ipad_lady.png);
+}
+
+.break-image-2{
+    height: 40vh;
+    background-size: cover;
+    background-image: url(images/product.jpg);
+}
+
+
+/* ----------------------------------
+            step odd
+------------------------------------*/
+.step-odd p, h3{
+    color: black;
+}
+
+.step-odd h2{
+    color: black;
+}
+
+
+/* ----------------------------------
+            step 2
+------------------------------------*/
+.top-image{
+    width: 90%;
+    height: 90%;
+}
+
+
+/* ----------------------------------
+                cta
+------------------------------------*/
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cta > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    font-size: 12px;
+}
+
+
+/* ----------------------------------
+            Demo Request
+------------------------------------*/
+form{
+    margin: 0 auto;
+    width: max-content;
+    padding: 1em;
+}
+
+form input, textarea{
+    border: 1px solid var(--navy);
+    border-radius: 2px;
+    width: 40vw;
+}
+
+.form-text > li > label, .formtext > li > label, .form-text > li > h2, textarea{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1em;
+    color: var(--navy);
+}
+form > h1, form > h2, form > h3, form > h4{
+    padding-bottom: 20px;
+}
+form > textarea{
+    height: 200px;
+    resize: none;
+}
+.form-text > li{
+    padding-bottom: 5px;
+}
+
+
+
+/* ----------------------------------
+            wide screens
+------------------------------------*/
+/* 
+@media screen and (min-width: 2000px) and (max-width: 2799px){
+.break-image{
+    height: 100vh;
+} */
+
+
+
+/* ----------------------------------
+                small screens
+------------------------------------*/
+
+@media screen and (max-width: 1210px){
+    .first{
+        order: -1;
+    }
+    .lean-img{
+        height: 300px;
+        width: 100%;
+    }
+    .ipad{
+        display: none;
+    }
+
+    .g60-40, .g40-60, .grid5col{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .w1of5, .w4of5, .g60-40 > div:nth-child(2), .g40-60 > div:nth-child(1){
+        width: 80%;
+    }
+    p{
+        width: 100%;
+    }
+    .benefit-container{
+
+        width: 45%;
+    }
+    .top-image{
+    }
+    .grey70, .grey70reverse{
+        background-image: none;
+    }
+    .footer{
+        font-size: 10px;
+        flex-direction: column;
+    }
+    .footer p{
+        width: max-content;
+    }
+    .vh90{
+        height: 60vh;
+    }
+    .g40-60 > div > p{
+        width: 100%;
+       }
+    p{
+        font-size: 16px;
+    }
+    .g40-60 > div:nth-child(2){
+        width: 100%;
+       }
+}
+
+@media screen and (max-width: 700px){
+
+.all{
+    position: absolute;
+}
+h4{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+}
+.top-image{
+}
+
+.vh90{
+    height: 50vh;
+}
+.benefit-gallery{
+        display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+.benefit-container{
+
+    width: 95%;
+}
+.benefit-bottom > p{
+    width: 100%;
+}
+.icon{
+    width: 4vh;
+}
+button{
+    font-size: 8px;
+}
+
+}
+
+
+
